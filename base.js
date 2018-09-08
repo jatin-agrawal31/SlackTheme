@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   $.ajax({
     url: 'https://raw.githubusercontent.com/EricHarvey/SlackTheme/master/base-urls.js',
     success: function(js) {
-      eval(js);
-      cssUrls.forEach(url => {
+      urls = eval(js);
+      urls.cssUrls.forEach(url => {
         $.ajax({
           url: url,
           success: function (css) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
       $.ajax({
-        url: customJsUrl,
+        url: urls.customJsUrl,
         success: function(customJs) {
           var s = document.createElement('script');
           s.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js';
