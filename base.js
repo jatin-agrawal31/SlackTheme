@@ -1,0 +1,33 @@
+const cssUrls = ['https://cdn.rawgit.com/laCour/slack-night-mode/master/css/raw/black.css',
+                  'https://raw.githubusercontent.com/dracula/highlightjs/master/dracula.css',
+                  ];
+
+const customJsUrl = '';
+
+document.addEventListener('DOMContentLoaded', function () {
+  cssUrls.forEach(url => {
+    $.ajax({
+      url: url,
+      success: function (css) {
+        $("<style></style>").appendTo('head').html(css);
+      }
+    });
+  });
+  $.ajax({
+    url: customJsUrl,
+    success: function(customJs) {
+      var s = document.createElement('script');
+      s.src = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js';
+      s.onload = function() {
+        setInterval(function () {
+          $('pre:not(.hljs)').each(function (i, block) {
+              hljs.highlightBlock(block);
+          });
+          (function() { eval(customJs); })();
+        }, 500);
+      };
+      s.type = "text/javascript";
+      document.getElementsByTagName('head')[0].appendChild(s);
+    }
+  });
+});
