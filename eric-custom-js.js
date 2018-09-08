@@ -18,3 +18,7 @@ $('a[data-message-sender="UB1BEA42X"]:not(.name-changed)').each(function(i, bloc
   block.innerText = "Utility Bill";
   block.classList.add('name-changed');
 });
+if ($('link#inserted-fonts').length === 0) {
+  const html = '<link rel="stylesheet" href=https://fonts.googleapis.com/css?family=Asap|Roboto:100,300|Ubuntu:300,400" id="inserted-fonts"/>'
+  $(html).appendTo('head');
+}
