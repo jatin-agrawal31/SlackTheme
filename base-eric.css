@@ -31,14 +31,13 @@ ts-jumper .p-jumper__help,
   color: #fff;
 }
 
-a:link, a:visited {
+a:link {
   color: rgba(0, 169, 255, 1);
 }
 
-// pre {
-//   background: rgba(255, 255, 255, 0.45);
-//   color: rgb(84, 3, 3);
-// }
+a[role="link"]:visited {
+  color: mediumpurple !important;
+}
 
 #team_menu {
   background: #191A1C;
