@@ -37,7 +37,6 @@ rescue => e
   puts 'You did something wrong'
   puts e
 ensure
-  
   @file ||= nil
   @file&.values&.each { |f| f.close } unless @file.nil?
 end

@@ -67,10 +67,6 @@ a[role="link"]:visited {
   color: #ffffff !important;
 }
 
-// #team_menu #presence.active:before {
-//   color: #148ff5 !important;
-// }
-
 .c-dialog__title, div.ql-editor, span.c-label__text {
   color: #fff !important;
 }
@@ -80,8 +76,28 @@ a[role="link"]:visited {
   color: #148ff5 !important;
 }
 
-.c-file__action_button, .c-dialog__content, .c-dialog__header, .p-file_upload_dialog .c-dialog__footer, .c-dialog__footer{
-  background-color: #222 !important;
+.c-file__action_button,
+.c-dialog__content,
+.c-dialog__header,
+.p-file_upload_dialog
+.c-dialog__footer,
+.c-dialog__footer,
+.p-flexpane_header,
+.p-downloads_list__shift_hint,
+.p-download_item__link--show {
+  background: #222 !important;
+}
+
+.p-download_item, .p-download_item__link--show {
+  background: #333 !important;
+}
+
+.p-download_item:hover {
+  border: 1px solid mediumpurple;
+}
+
+.p-download_item__name {
+  color: deepskyblue;
 }
 
 input, textarea, [contenteditable] {
