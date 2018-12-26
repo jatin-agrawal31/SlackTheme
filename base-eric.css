@@ -13,9 +13,14 @@ body {
 
 ts-jumper .p-jumper__help,
 .c-filter_input__input[type=text],
-.c-filter_input {
+.c-filter_input,
+.p-search_filter__title_text {
   background-color: #222;
 }
+
+/* button.p-search_filter__title_text {
+background: #444;
+} */
 
 .c-menu,
 .ql-container.texty_single_line_input,
@@ -40,7 +45,7 @@ a[role="link"]:visited {
 }
 
 #team_menu {
-  background: #191A1C;
+  background: #191A1C !important;
 }
 
 .c-icon--presence-online {
@@ -59,11 +64,11 @@ a[role="link"]:visited {
   background: rgba(169, 91, 234, 0.33) !important;
 }
 
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover {
-  background: #148ff5;
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__user_group--mention, .c-mrkdwn__user_group--mention:hover, .c-member_slug--mention {
+  background: #148ff5 !important;
 }
 
-.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg {
+.c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__highlight, .c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover, .mention_yellow_bg, .c-member_slug--mention {
   color: #ffffff !important;
 }
 
@@ -84,11 +89,12 @@ a[role="link"]:visited {
 .c-dialog__footer,
 .p-flexpane_header,
 .p-downloads_list__shift_hint,
-.p-download_item__link--show {
+.p-download_item__link--show,
+div.ql-editor {
   background: #222 !important;
 }
 
-.p-download_item, .p-download_item__link--show {
+.p-download_item, .p-download_item__link--show, .c-pillow_file {
   background: #333 !important;
 }
 
@@ -98,6 +104,18 @@ a[role="link"]:visited {
 
 .p-download_item__name {
   color: deepskyblue;
+}
+
+a.c-member_slug--mention, a.c-member_slug--mention:hover {
+  background-color: rgba(0, 112, 255, 0.74);
+}
+
+a.c-member_slug--mention:hover {
+  color: #c1c1c1;
+}
+
+a.c-member_slug--mention {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 input, textarea, [contenteditable] {
@@ -120,7 +138,7 @@ li.p-jumper__row[aria-selected="true"] {
   background-color: #222;
 }
 
-.c-search_message__body {
+.c-search_message__body, .c-pillow_file__title {
   color: #fff;
 }
 
@@ -129,8 +147,26 @@ li.p-jumper__row[aria-selected="true"] {
   font-weight: bold;
 }
 
+.c-file__action_button, .c-file__action_button:link {
+  color: #3a6bff;
+}
+
+.c-file__action_button:hover, .c-file__action_button:link:hover, .c-file__action_button:hover {
+  color: #b1c5ff;
+}
+
+.p-message_pane__unread_banner__banner, .p-message_pane__unread_banner /* mark as read button/new messages */ {
+  background: mediumpurple;
+}
+.p-message_pane__unread_banner__banner:hover, .p-message_pane__unread_banner:hover, a.p-channel_sidebar__channel--selected /* mark as read button/new messages */ {
+  background: rebeccapurple !important;
+}
+
 a[data-message-sender="U3M8891V5"] { /* Bharath */
   color: #5771ff !important;
+}
+a[href="mailto:bharath.rengarajan@driveinformed.com"]::after {
+  content: " (in direct violation of SOC-2 compliance) "
 }
 
 a[data-message-sender="U8F0V67NZ"] { /* Eric */
@@ -156,4 +192,13 @@ a[data-message-sender="U7UKE4JN4"] { /* Emma */
 }
 a[data-message-sender="UB1BEA42X"] { /* Bill */
   color:#00a9bd !important;
+}
+a[data-message-sender="U322PS3FF"] { /* Sandip */
+  color:#00c7c1 !important;
+}
+a[data-message-sender="UDSAFEE2D"] { /* Victoria */
+  color: #c7002b !important;
+}
+a[data-message-sender="UEEMUVD5M"] { /* Jatin */
+  color:#c75a00 !important;
 }

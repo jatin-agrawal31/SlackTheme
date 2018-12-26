@@ -3,7 +3,7 @@ $('a[data-message-sender="U7UKE4JN4"]:not(.name-changed)').each(function(i, bloc
   block.classList.add('name-changed');
 });
 $('a[data-message-sender="UAU3VA7JB"]:not(.name-changed)').each(function(i, block) {
-  block.innerText = 'Proposition Chicken 🐔';
+  block.innerText = 'Proposition "Ashley" Chicken 🐔';
   block.classList.add('name-changed');
 });
 $('a[data-message-sender="U0XK8MGFP"]:not(.name-changed)').each(function(i, block) {
@@ -20,6 +20,14 @@ $('a[data-message-sender="UB1BEA42X"]:not(.name-changed)').each(function(i, bloc
 });
 $('a[data-message-sender="U3M8891V5"]:not(.name-changed)').each(function(i, block) {
   block.innerText = "Running Late 🏃";
+  block.classList.add('name-changed');
+});
+$('a[data-message-sender="UDSAFEE2D"]:not(.name-changed)').each(function(i, block) {
+  block.innerText = "Victoria Duong";
+  block.classList.add('name-changed');
+});
+$('a[data-message-sender="UEEMUVD5M"]:not(.name-changed)').each(function(i, block) {
+  block.innerText = "Jatin Agrawal";
   block.classList.add('name-changed');
 });
 if ($('link#inserted-fonts').length === 0) {
