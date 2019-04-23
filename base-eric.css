@@ -14,8 +14,22 @@ body {
 ts-jumper .p-jumper__help,
 .c-filter_input__input[type=text],
 .c-filter_input,
-.p-search_filter__title_text {
+.p-search_filter__title_text,
+.fullscreen_modal__body__content {
   background-color: #222;
+}
+
+.c-fullscreen_modal__body, .c-fullscreen_modal__header {
+  background-color: #222;
+  color: #fff;
+}
+
+.c-label.p-prefs_modal__radiogroup--selected.c-label--inline.c-label--pointer.c-label--with_formatted_text{
+  background: rebeccapurple;
+}
+
+.c-link--button.c-sidebar_menu__list_item {
+  color: #fff;
 }
 
 /* button.p-search_filter__title_text {
@@ -127,7 +141,7 @@ input, textarea, [contenteditable] {
 }
 
 pre, code {
-  font-family: Hack !important;
+  font-family: Operator Mono !important;
 }
 
 li.p-jumper__row[aria-selected="true"] {
@@ -162,6 +176,18 @@ li.p-jumper__row[aria-selected="true"] {
   background: rebeccapurple !important;
 }
 
+span[style="background-image: url(https://emoji.slack-edge.com/T0XKK565Q/whappa/dbf3233c967c744c.gif);"] {
+  display: none;
+}
+
+button[aria-label="React with whappa"], button[aria-label="React with wappah"], button[aria-label="React with woot woot"], span[data-codepoints="whappa"], span[data-codepoints="wappah"], span[data-codepoints="woot_woot"] {
+  display: none;
+}
+
+b[data-stringify-prefix="*"] {
+  display: none !important;
+}
+
 a[data-message-sender="U3M8891V5"] { /* Bharath */
   color: #5771ff !important;
 }
@@ -184,6 +210,9 @@ a[data-message-sender="U0XK8MGFP"]:after {
 a[data-message-sender="U0XK8MGFP"]:hover:after {
   content: ' Biiiiitch';
 }
+a[data-message-sender="UEEMUVD5M"]:hover:after {
+  content: ' aka Amazing Lover';
+}
 a[data-message-sender="U1LDS3P4H"] { /* Yash */
   color: #e42b2b !important;
 }
@@ -202,3 +231,18 @@ a[data-message-sender="UDSAFEE2D"] { /* Victoria */
 a[data-message-sender="UEEMUVD5M"] { /* Jatin */
   color:#c75a00 !important;
 }
+a[data-message-sender="UFCN2ETFB"] { /* Ashwin */
+  color:hotpink !important;
+}
+a[data-message-sender="UFCN2ETFB"]:hover:after {
+  content: ' aka Tuff Desperado';
+}
+a[data-message-sender="UFX3LPZS9"] { /* Harshil */
+  color:rgb(238, 255, 0) !important;
+}
+a[data-message-sender="UGB100S8L"] { /* Haiting */
+  color:rgb(0, 184, 129) !important;
+}
+/* a[data-message-sender="UFCN2ETFB"]:hover:before {
+  content: '';
+} */
