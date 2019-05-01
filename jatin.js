@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   }
-  getFile('https://raw.githubusercontent.com/EricHarvey/SlackTheme/master/eric-urls.js', (js) => {
+  getFile('https://raw.githubusercontent.com/jatin-agrawal31/SlackTheme/master/jatin-urls.js', (js) => {
     let urls = eval(js);
       urls.cssUrls.forEach(url => {
         getFile(url, (css) => {
