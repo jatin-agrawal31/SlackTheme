@@ -22,10 +22,6 @@ $('a[data-message-sender="U3M8891V5"]:not(.name-changed)').each(function(i, bloc
   block.innerText = "Running Late 🏃";
   block.classList.add('name-changed');
 });
-$('a[data-message-sender="UDSAFEE2D"]:not(.name-changed)').each(function(i, block) {
-  block.innerText = "Victoria Duong";
-  block.classList.add('name-changed');
-});
 $('a[data-message-sender="U8F0V67NZ"]:not(.name-changed)').each(function(i, block) {
   block.innerText = "The PR(ops) Guy";
   block.classList.add('name-changed');
