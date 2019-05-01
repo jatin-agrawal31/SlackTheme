@@ -26,8 +26,8 @@ $('a[data-message-sender="UDSAFEE2D"]:not(.name-changed)').each(function(i, bloc
   block.innerText = "Victoria Duong";
   block.classList.add('name-changed');
 });
-$('a[data-message-sender="UEEMUVD5M"]:not(.name-changed)').each(function(i, block) {
-  block.innerText = "Jatin Agrawal";
+$('a[data-message-sender="U8F0V67NZ"]:not(.name-changed)').each(function(i, block) {
+  block.innerText = "The PR(ops) Guy";
   block.classList.add('name-changed');
 });
 if ($('link#inserted-fonts').length === 0) {
