@@ -4,5 +4,5 @@
             'https://raw.githubusercontent.com/jatin-agrawal31/SlackTheme/master/base-jatin.css',
             'https://raw.githubusercontent.com/jatin-agrawal31/SlackTheme/master/hljs-brogrammer.css'
            ],
-  customJsUrl: 'https://raw.githubusercontent.com/jatin-agrawal31/SlackTheme/master/jatin-custom-js.js'
+  customJsUrl: 'https://raw.githubusercontent.com/jatin-agrawal31/SlackTheme/master/jatin-custom-names.js'
 }})();
