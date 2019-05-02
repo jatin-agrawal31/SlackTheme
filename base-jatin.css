@@ -178,12 +178,12 @@ a[data-message-sender="UAU3VA7JB"] { /* Ashley */
 a[data-message-sender="U0XK8MGFP"] { /* Justin */
   color: #c50bb4 !important;
 }
-a[data-message-sender="U0XK8MGFP"]:after {
+/* a[data-message-sender="U0XK8MGFP"]:after {
   content: ' B*tch';
 }
 a[data-message-sender="U0XK8MGFP"]:hover:after {
   content: ' Biiiiitch';
-}
+} */
 a[data-message-sender="U1LDS3P4H"] { /* Yash */
   color: #e42b2b !important;
 }
